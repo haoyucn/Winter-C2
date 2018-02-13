@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab 2</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  </head>
+  <body>
+
+    <h1>Lab 2: Weather and Stack Overflow APIs</h1>
+    <div>
+        <button class="button" onclick="showTabInfo('Weather_API')">Weather API</button>          
+        <button class="button" onclick="showTabInfo('Stack_Overflow')">Stack Overflow</button>
+    </div> 
+    
+    <div id="Weather_API" class="content">
+      <h2>Weather API</h2>
+      <p>Get The Weather of a U.S. City</p>
+      <form>
+        <label>Enter a U.S. city</label>
+        <input id="weatherInput" type="text"></input><br/>
+        <input id="weatherSubmit" type="submit" value="Submit"></input>
+      </form>
+
+      <div id="weatherResults"></div>
+    </div>
+    
+    <div id="Stack_Overflow" class="content" style="display:none">
+      <h2>Stack Overflow</h2>
+      <p>Your Question Below.</p>
+      <form>
+        <label>Enter Your Tech-Related Question</label>
+        <input id="questionInput" type="text"></input><br/>
+        <input id="questionSubmit" type="submit" value="Submit"></input>
+      </form>
+
+      <div id="questionResults"></div> 
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script text="type/javascript" src="/script.js"></script>
+
+  <div class="footer">
+      <p><a href="https://github.com/BYU-CS260-Winter-2018/lab-2-ammon-mugimu"><i class="fab fa-github" style="font-size: 40px;"></i></a></p> 
+  </div>
+  </body>
+</html>
