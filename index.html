@@ -6,34 +6,39 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
     <script text="type/javascript" src="script.js"></script>
   </head>
   <body>
 
-    <h1>Lab 2: Weather and Stack Overflow APIs</h1>
-    <div>
-        <button class="button" onclick="showTabInfo('xkcd-canvas')">xkcd comics</button>
-        <button class="button" onclick="showTabInfo('cn-canvas')">Chuck Norris facts</button>
+    <h1 id="title">This might be the joke section</h1>
+
+    <div class="grid-container">
+    <div class="searchBar">
+        <div class="xkcd-button" onclick="showTabInfo('xkcd-canvas')"><div class="tab-message">xkcd comics</div></div>
+        <div class="cn-button" onclick="showTabInfo('cn-canvas')"><div class="tab-message">Chuck Norris facts</div></div>
     </div>
 
+
+    <div class="resultBar">
     <div id="xkcd-canvas" class="canvas">
       <h2>One comic a day, the ... whatever</h2>
-      
-      <div>
+
+
           <input id="Button-Random" type="submit" value="Random Comic" class="button"></input>
           <div id="xkcdResults"></div>
           <input id="other-button" type="submit" value="What?" class="button" style="display:none"></input>
-      </div>
     </div>
 
-    <div id="cn-canvas" class="canvas">
-      <h2>One comic a day, the ... whatever</h2>
+    <div id="cn-canvas" class="canvas" style="display: none;">
+      <h2>Do you know ...</h2>
       <div id="cnResults"></div>
       <div>
           <input id="chuck-Random" type="submit" value="Random Fact" class="button"></input>
       </div>
     </div>
-
+  </div>
+  </div>
   <div class="footer">
       <p><a href="https://github.com/haoyucn/Winter-C2"><i class="fab fa-github" style="font-size: 40px;"></i></a></p>
   </div>
