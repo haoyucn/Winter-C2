@@ -16,7 +16,7 @@ body{
 }
 
 
-.xkcd-button{
+#xkcd-button{
   min-height: 300px;
   background-color: #F2CBC4;
   text-align: center;
@@ -28,7 +28,7 @@ border-radius: 5px;
   background-color: #F2CBC4;
 }
 
-.cn-button{
+#cn-button{
   background-color: #DFE3F0;
   text-align: center;
   min-height: 300px;
@@ -87,12 +87,14 @@ h2{
     min-height: 50px;
     width: 50%;
     padding-top:20px;
+
   }
   .cn-button{
     float: left;
     padding-top: 20px;
     min-height: 50px;
     width: 50%;
+    
   }
 
   .link{

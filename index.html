@@ -15,17 +15,14 @@
 
     <div class="grid-container">
     <div class="searchBar">
-        <div class="xkcd-button" onclick="showTabInfo('xkcd-canvas')"><div class="tab-message">xkcd comics</div></div>
-        <div class="cn-button" onclick="showTabInfo('cn-canvas')"><div class="tab-message">Chuck Norris facts</div></div>
+        <div id="xkcd-button" ><div class="tab-message">Jokes</div></div>
+        <div id="cn-button"><div class="tab-message">Chuck Norris facts</div></div>
     </div>
 
 
     <div class="resultBar">
     <div id="xkcd-canvas" class="canvas">
-      <h2>One comic a day, the ... whatever</h2>
-
-
-          <input id="Button-Random" type="submit" value="Random Comic" class="button"></input>
+          <input id="Button-Random" type="submit" value="Random Jokes" class="button"></input>
           <div id="xkcdResults"></div>
           <input id="other-button" type="submit" value="What?" class="button" style="display:none"></input>
     </div>
