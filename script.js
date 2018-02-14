@@ -13,42 +13,27 @@ $(document).ready(function() {
 
         console.log("button get click");
 
-        var value = Math.floor((Math.random() * 614) + 1);
-        var myurl= "http://xkcd.com/" + value +"/info.0.json" ;
-        //console.log(myurl);
-        // $.ajax({
-        //     url : myurl,
-        //     dataType : "json",
-        //     success : function(json) {
-        //
-        //         // var results = "";
-        //         // results += "<h2>" + jsonp.safe_title + "</h2>";
-        //         // results += "<img src="+ jsonp.img +"></img>";
-        //         // results += "<p>" + jsonp.alt + "</p>";
-        //         // results += "<h3>" + jsonp.year + "</h3>";
-        //         $("#xkcdResults").html(results);
-        //     }
-        // });
-
-        // $.getJSON(myurl, (json) => {
-        //   console.log(json);
-        //   var results = "";
-        //   results += "<h2>" + json.safe_title + "</h2>";
-        //   results += "<img src="+ json.img +"></img>";
-        //   results += "<p>" + json.alt + "</p>";
-        //   results += "<h3>" + json.year + "</h3>";
-        //   $("#xkcdResults").html(results);
-        // });
-
-        function getComic(json){
-          console.log(json);
-        }
-
+        var myurl= "https://08ad1pao69.execute-api.us-east-1.amazonaws.com/dev/random_joke";
         $.ajax({
-          url : myurl,
-          dataType : "jsonp",
-          jsonpCallback: "getComic"
+            url : myurl,
+            dataType : "json",
+            success : function(json) {
+                var results = "";
+                results += "<h2>" + json.setup + "</h2>";
+                results += "<p id=\"Result\" style=\"display:none\">" + json.punchline + "</p>";
+                $("#xkcdResults").html(results);
+            }
         });
+    });
+
+    $("#Button-Random").click(function(e) {
+        e.preventDefault();
+        var display = $("#other-button").css( "display" , "block");
+    });
+
+    $("#other-button").click(function(e) {
+        e.preventDefault();
+        var display = $("#Result").css( "display" , "block");
     });
 
     $("#chuck-Random").click(function(e) {
