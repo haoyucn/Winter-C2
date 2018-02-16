@@ -2,32 +2,42 @@
 <html>
   <head>
     <title>Lab 2</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
      <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
     <script text="type/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
 
     <h1 id="title">This might be the joke section</h1>
 
-    <div class="grid-container">
-    <div class="searchBar">
-        <div id="xkcd-button" ><div class="tab-message">Jokes</div></div>
-        <div id="cn-button"><div class="tab-message">Chuck Norris facts</div></div>
+    <div class="container">
+    <div class="row">
+    <div class="col-md">
+    <!-- <div class="searchBar"> -->
+        <!-- <div id="xkcd-button" ><div class="tab-message">Jokes</div></div> -->
+        <div id="xkcd-canvas" class="canvas">
+              <input id="Button-Random" type="submit" value="Random Jokes" class="button"></input>
+              <div id="xkcdResults"></div>
+              <input id="other-button" type="submit" value="What?" class="button" style="display:none"></input>
+        </div>
+        <!-- <div id="cn-button"><div class="tab-message">Chuck Norris facts</div></div> -->
     </div>
 
 
-    <div class="resultBar">
-    <div id="xkcd-canvas" class="canvas">
+
+    <div class="col-md">
+    <!-- <div id="xkcd-canvas" class="canvas">
           <input id="Button-Random" type="submit" value="Random Jokes" class="button"></input>
           <div id="xkcdResults"></div>
           <input id="other-button" type="submit" value="What?" class="button" style="display:none"></input>
-    </div>
+    </div> -->
 
-    <div id="cn-canvas" class="canvas" style="display: none;">
+    <div class="canvas">
       <h2>Do you know ...</h2>
       <div id="cnResults"></div>
       <div>
@@ -36,6 +46,7 @@
     </div>
   </div>
   </div>
+</div>
   <div class="footer">
       <p><a href="https://github.com/haoyucn/Winter-C2"><i class="fab fa-github" style="font-size: 40px;"></i></a></p>
   </div>
