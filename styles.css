@@ -7,8 +7,10 @@ body{
 }
 
 #title{
-  font-family: 'Rammetto One', cursive;
+  font-family: 'Noto Serif', serif;
   font-size: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 #cn-button{
