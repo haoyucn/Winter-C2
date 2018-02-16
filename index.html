@@ -12,31 +12,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
-      <nav class="navbar bg-primary">
-          <h1 class="navbar-brand mb-0">
-              <i class="fas fa-filter"></i>
-              No Filter Here
-          </h1>
-        </nav>
+
+    <nav class="navbar bg-primary">
+              <h1 class="navbar-brand mb-0">
+                  <i class="fas fa-filter"></i>
+                  No Filter Here
+              </h1>
+    </nav>
+
+
     <h1 id="title">This might be the joke section</h1>
 
-    <div class="container">
-    <div class="row">
+    <div class="container" style="min-height: 80%;">
+    <div class="row" >
     <div class="col-md">
+      <div class="card text-white bg-secondary mb-3" style="min-height: 500px;">
       <div id="xkcd-canvas" class="canvas">
-              <button type="button" id="Button-Random" class="btn btn-primary">Random Jokes</button>
+        <div class="card-header">Jokes need to know</div>
+          <div class="card-body">
+              <!-- <div id="jokeResults"></div> -->
+              <button type="button" id="Button-Random" class="btn btn-primary">New Random Jokes</button>
               <div id="xkcdResults"></div>
-              <button id="other-button" value="What?" class="btn btn-info" style="display:none">What</input>
+              <button id="other-button" value="What?" class="btn btn-info" >What</input>
+          </div>
         </div>
+      </div>
     </div>
 
 
 
     <div class="col-md">
-
-      <h2>Do you know ...</h2>
+      <div class="card text-white bg-secondary mb-3" style="min-height: 500px;">
+      <div class="card-header">Do you know</div>
+      <div class="card-body">
+      <div id="chuckResults"></div>
       <div id="cnResults"></div>
-      <button id="chuck-Random" type="button"  class="btn btn-light">Random Fact</button>
+      <button id="chuck-Random" type="button"  class="btn btn-light">Another Fact</button>
+    </div>
+    </div>
   </div>
   </div>
 </div>
